@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+margin: 0;
+padding: 0;
+height: 100vh;
+background: linear-gradient(to right, #55439E, #952fff);  
+}
+
+.main-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url(./img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-left-bottom{
+    position: absolute;
+    left: -1px;
+    bottom: 53px;
+    width: 284px;
+    height: 284px;
+}
+
+#img-left-top{
+     width: 290.25px;
+     height: 267.16px;
+     position: absolute;
+     top: -100px;
+     left: -30px;
+}
+
+#img-right{
+
+    width: 550px;
+    height: 640px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.info{
+    width:100%;
+    max-width: 1117px;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-tittle{
+    width: 480px;
+}
+
+.info-tittle h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    width: 380px;
+    text-transform: capitalize;
+     color: #ffffff;
+    font-family: lato, sans-serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.info-tittle p{
+    font-family: Open sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    width: 383px;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+.info-submit{
+    width: 100%;
+    position: relative;
+}
+
+.info-submit input{
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(45px);
+    padding-left: 30px;
+}
+
+.info-submit input::placeholder{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #cdbfd8;
+}
+
+.info-submit button{
+    width: 120px;
+    height: 60px;
+    background-color: #4F3AA7;
+    border-radius: 6px;
+    font-family: alato, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 12px;
+    right: -20px;
+}
+
+.info-card .card{
+    width: 500px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(45px);
+    border-radius: 20px;
+    position: relative;
+    padding: 40px 50px;
+    box-sizing: border-box;
+}
+
+.info-card .card::before{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 20px  0 0 20px;
+}
+
+.info-card .card::after{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;  
+}
+
+.card-tittle h2{
+     font-family: Laro, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+
+.card-chip{
+    margin-bottom: 45px;
+}
+
+.card-chip img{
+    width: 60px;
+    height: 43px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;   
+}
+
+.card-footer div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-footer .c-footer-info p{
+   font-family: Lato, sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   color: #ffffff; 
+}
+.card-footer .c-footer-info p{
+    margin: 0;
+}
+.card-footer .c-footer-info p:first-child{
+    margin-bottom: 8px;  
+}
+
+.f-text{
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff; 
+    text-transform: uppercase;
+    letter-spacing: 0.05cm;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.f-text--big{
+    letter-spacing: 0.07cm;
+    font-size: 20px;
+    line-height: 30px;
+}
